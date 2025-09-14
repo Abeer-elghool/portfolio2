@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio | Junior DevOps Engineer</title>
+  <style>
+    /* Reset and base */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      background: #f5f7fa;
+      color: #333;
+    }
+    a {
+      text-decoration: none;
+      color: #0077b6;
+    }
+
+    /* Layout */
+    header {
+      background: #0a192f;
+      color: #fff;
+      padding: 2rem;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2.5rem;
+    }
+    header p {
+      margin-top: 0.5rem;
+      font-size: 1.2rem;
+      opacity: 0.85;
+    }
+
+    nav {
+      background: #112240;
+      display: flex;
+      justify-content: center;
+      padding: 0.8rem;
+      gap: 2rem;
+    }
+    nav a {
+      color: #fff;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #64ffda;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 1rem;
+    }
+
+    h2 {
+      margin-bottom: 1rem;
+      font-size: 1.8rem;
+      color: #0a192f;
+      border-left: 4px solid #64ffda;
+      padding-left: 0.5rem;
+    }
+
+    .about, .skills, .projects, .contact {
+      margin-bottom: 3rem;
+    }
+
+    .skills-list, .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1rem;
+    }
+
+    .skill, .project {
+      background: #fff;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .skill:hover, .project:hover {
+      transform: translateY(-5px);
+    }
+
+    .project h3 {
+      margin-bottom: 0.5rem;
+      font-size: 1.2rem;
+    }
+
+    footer {
+      background: #0a192f;
+      color: #fff;
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Jane Doe</h1>
+    <p>Junior DevOps Engineer | Web Developer</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>
+      I’m a Junior DevOps Engineer with a background in web development.  
+      Passionate about automating workflows, optimizing deployments, and ensuring high system reliability.  
+      Previously built responsive web apps and now focusing on bridging development and operations.
+    </p>
+  </section>
+
+  <section id="skills" class="skills">
+    <h2>Skills</h2>
+    <div class="skills-list">
+      <div class="skill">Linux & Shell Scripting</div>
+      <div class="skill">Docker & Kubernetes</div>
+      <div class="skill">CI/CD (GitHub Actions, Jenkins)</div>
+      <div class="skill">AWS & Cloud Services</div>
+      <div class="skill">Infrastructure as Code (Terraform, Ansible)</div>
+      <div class="skill">Git & Version Control</div>
+      <div class="skill">HTML, CSS, JavaScript</div>
+      <div class="skill">React & Node.js</div>
+    </div>
+  </section>
+
+  <section id="projects" class="projects">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <div class="project">
+        <h3>CI/CD Pipeline</h3>
+        <p>Built an automated CI/CD pipeline using GitHub Actions and Docker to streamline deployments.</p>
+      </div>
+      <div class="project">
+        <h3>Kubernetes Deployment</h3>
+        <p>Deployed and scaled a microservice-based app with Kubernetes on AWS EKS.</p>
+      </div>
+      <div class="project">
+        <h3>Portfolio Website</h3>
+        <p>Designed and deployed this personal portfolio with responsive design and modern UI.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:jane.doe@email.com">jane.doe@email.com</a></p>
+    <p>GitHub: <a href="https://github.com/username" target="_blank">github.com/username</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/username" target="_blank">linkedin.com/in/username</a></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Jane Doe. Built with ❤️ and DevOps spirit.</p>
+  </footer>
+</body>
+</html>
